@@ -37,7 +37,7 @@ async def search(query, page):
     x = requests.post("https://search.htv-services.com", headers=headers, json=res)
     rl = x.json()
     text = {
-        "response": json.loads(rl'hits']),
+        "response": json.loads(rl['hits']),
         "page": rl['page']
     }
     return text
